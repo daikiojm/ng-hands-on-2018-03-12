@@ -1,4 +1,6 @@
 <app-toolbar></app-toolbar>
 
-<div>{{ repos$ | async | json }}</div>
+<div class="repository-list">
+  <app-repository *ngFor="let repo of repos$ | async" [repo]="repo"></app-repository>
+</div>
 

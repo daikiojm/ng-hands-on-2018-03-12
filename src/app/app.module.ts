@@ -6,12 +6,14 @@ import { GithubApiService } from './services/github-api.service';
 
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { RepositoryComponent } from './components/repository/repository.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    RepositoryComponent
   ],
   imports: [
     BrowserModule,
