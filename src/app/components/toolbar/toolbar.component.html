@@ -1,5 +1,5 @@
 <p class="title">{{ title }}</p>
 <div class="search">
-  <input class="search__input" type="text" placeholder="検索" [(ngModel)]="searchWord">
+  <input class="search__input" type="text" placeholder="検索" [formControl]="searchWord">
   <button class="search__button" (click)="onClickSearch()">検索</button>
 </div>
