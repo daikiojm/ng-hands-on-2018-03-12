@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { GithubApiService } from './services/github-api.service';
 
@@ -17,7 +18,8 @@ import { RepositoryComponent } from './components/repository/repository.componen
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [GithubApiService],
   bootstrap: [AppComponent]

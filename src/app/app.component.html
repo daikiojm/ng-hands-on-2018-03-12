@@ -1,4 +1,4 @@
-<app-toolbar></app-toolbar>
+<app-toolbar (search)="search($event)"></app-toolbar>
 
 <div class="repository-list">
   <app-repository *ngFor="let repo of repos$ | async" [repo]="repo"></app-repository>

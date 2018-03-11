@@ -16,6 +16,10 @@ export class AppComponent implements OnInit {
   constructor(private githubApiService: GithubApiService) {}
 
   ngOnInit() {
-    this.repos$ = this.githubApiService.getRepos();
+  }
+
+  search(word: string) {
+    console.log(`search: ${word}`);
+    this.repos$ = this.githubApiService.searchRepos(word);
   }
 }
