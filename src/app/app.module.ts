@@ -17,7 +17,7 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
     BrowserModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [GithubApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
